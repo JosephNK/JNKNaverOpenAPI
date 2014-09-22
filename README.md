@@ -118,7 +118,13 @@ http://developer.naver.com/wiki/pages/OpenAPI
 #### JNKNaverShortUrl Request 종류
 
 ```objective-c
-- (void)requestShortUrlAPI:(NSString *)orgUrl
+- (void)requestShortUrlAPI:(id)delegate
+                   parsing:(JNKNaverShortUrlRequestParserHandler)parser
+                   success:(JNKNaverShortUrlRequestSuccessHandler)success
+                   failure:(JNKNaverShortUrlRequestErrorHandler)failure;
+
+- (void)requestShortUrlAPI:(id)delegate
+                    orgUrl:(NSString *)orgUrl
                   dataType:(NSString *)dataType
                    parsing:(JNKNaverShortUrlRequestParserHandler)parser
                    success:(JNKNaverShortUrlRequestSuccessHandler)success
@@ -222,7 +228,9 @@ JNKNaverCafeRequest *api = [[JNKNaverCafeRequest alloc] init];
 #import "JNKNaverShortUrlOpenAPI.h"
 
 JNKNaverShortUrlRequest *api = [[JNKNaverShortUrlRequest alloc] init];
-[api requestShortUrlAPI:@"www.naver.com" dataType:@"xml"
+[api requestShortUrlAPI:nil
+                 orgUrl:@"www.naver.com"
+               dataType:@"xml"
                 parsing:^id(JNKNaverShortUrlRequest *request, NSData *responseData) {
                     // parsing (on Background Thread)
                     // return id (ResponseData로부터 파싱한 후 파싱 데이터 리턴)
