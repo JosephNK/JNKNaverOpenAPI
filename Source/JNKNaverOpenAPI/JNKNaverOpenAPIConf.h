@@ -24,8 +24,8 @@
 
 /* Naver Open API Search API Conf */
 
-#define NaverOpenAPISearchKey              @""
-#define NaverOpenAPISearchUrl              @"http://openapi.naver.com/search"
+#define NaverOpenAPISearchKey               @""
+#define NaverOpenAPISearchUrl               @"http://openapi.naver.com/search"
 
 
 /* Naver Open API OAuth API Conf */
