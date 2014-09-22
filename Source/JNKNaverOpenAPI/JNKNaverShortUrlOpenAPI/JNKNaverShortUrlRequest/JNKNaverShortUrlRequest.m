@@ -37,6 +37,12 @@
 @implementation JNKNaverShortUrlRequest
 
 - (void)dealloc {
+    if (_orgUrl) {
+        JNK_RELEASE(_orgUrl); _orgUrl = nil;
+    }
+    if (_dataType) {
+        JNK_RELEASE(_dataType); _dataType = nil;
+    }
     if (_successHandler) {
         JNK_RELEASE(_successHandler); _successHandler = nil;
     }
@@ -56,38 +62,32 @@
     return self;
 }
 
-- (void)requestShortUrlAPI:(NSString *)orgUrl
-                  dataType:(NSString *)dataType
+#pragma mark -
+#pragma mark Overriding
+
+- (void)setDataType:(NSString *)dataType {
+    if (_dataType != dataType) {
+        JNK_RELEASE(_dataType); _dataType = nil;
+        _dataType = JNK_RETAIN([dataType lowercaseString]);
+    }
+}
+
+#pragma mark -
+#pragma mark Request
+
+- (void)requestShortUrlAPI:(id)delegate
                    parsing:(JNKNaverShortUrlRequestParserHandler)parser
                    success:(JNKNaverShortUrlRequestSuccessHandler)success
                    failure:(JNKNaverShortUrlRequestErrorHandler)failure
 {
-    _orgUrl = orgUrl;
     _key = NaverOpenAPIShortUrlKey;
-    _dataType = [dataType lowercaseString];
     
     _successHandler = JNK_BLOCK_COPY(success);
     _errorHandler = JNK_BLOCK_COPY(failure);
     
-    if ([_key isEqualToString:@""]) {
-        NSAssert(NO, @"Key 값 필수");
-    }
-    if ([_orgUrl isEqualToString:@""]) {
-        NSAssert(NO, @"변환할 URL 값 필수");
-    }
+    [self checkSumParams];
     
-    NSString *urlString;
-    if ([_dataType isEqualToString:@"xml"]) {
-        urlString = [NSString stringWithFormat:@"%@?key=%@&url=%@",
-                     NaverOpenAPIShortUrlXML, _key, orgUrl];
-    }else if ([_dataType isEqualToString:@"json"]) {
-        urlString = [NSString stringWithFormat:@"%@?key=%@&url=%@",
-                     NaverOpenAPIShortUrlJSON, _key, orgUrl];
-    }else {
-        NSAssert(NO, @"DataType not XML, JSON");
-    }
-    
-    _requestURL = JNK_AUTORELEASE([[NSURL alloc] initWithString:urlString]);
+    _requestURL = JNK_AUTORELEASE([[NSURL alloc] initWithString:[self getCallUrl]]);
     
     [JNKAsyncURLConnection requestURL:[_requestURL absoluteString] delegate:nil
                         completeBlock:^(NSData *data) {
@@ -95,7 +95,58 @@
                         } errorBlock:^(NSError *error) {
                             [self dispatchFailure:error];
                         }];
+}
+
+- (void)requestShortUrlAPI:(id)delegate
+                    orgUrl:(NSString *)orgUrl
+                  dataType:(NSString *)dataType
+                   parsing:(JNKNaverShortUrlRequestParserHandler)parser
+                   success:(JNKNaverShortUrlRequestSuccessHandler)success
+                   failure:(JNKNaverShortUrlRequestErrorHandler)failure
+{
+    _key = NaverOpenAPIShortUrlKey;
+    _orgUrl = JNK_RETAIN(orgUrl);
+    self.dataType = dataType;          // self. : Overriding Method Call
     
+    _successHandler = JNK_BLOCK_COPY(success);
+    _errorHandler = JNK_BLOCK_COPY(failure);
+    
+    [self checkSumParams];
+    
+    _requestURL = JNK_AUTORELEASE([[NSURL alloc] initWithString:[self getCallUrl]]);
+    
+    [JNKAsyncURLConnection requestURL:[_requestURL absoluteString] delegate:nil
+                        completeBlock:^(NSData *data) {
+                            [self dispatchSuccess:data ParserBlock:parser];
+                        } errorBlock:^(NSError *error) {
+                            [self dispatchFailure:error];
+                        }];
+}
+
+#pragma mark -
+
+- (void)checkSumParams {
+    if (_key == nil || [_key isEqualToString:@""]) {
+        NSAssert(NO, @"Key 값 필수");
+    }
+    if (_orgUrl == nil || [_orgUrl isEqualToString:@""]) {
+        NSAssert(NO, @"변환할 URL 필수");
+    }
+    if (_dataType == nil || !([_dataType isEqualToString:@"xml"] || [_dataType isEqualToString:@"json"])) {
+        NSAssert(NO, @"데이타타입 XML 또는 JSON 필수");
+    }
+}
+
+- (NSString *)getCallUrl {
+    NSString *urlString;
+    if ([_dataType isEqualToString:@"xml"]) {
+        urlString = [NSString stringWithFormat:@"%@?key=%@&url=%@",
+                     NaverOpenAPIShortUrlXML, _key, _orgUrl];
+    }else if ([_dataType isEqualToString:@"json"]) {
+        urlString = [NSString stringWithFormat:@"%@?key=%@&url=%@",
+                     NaverOpenAPIShortUrlJSON, _key, _orgUrl];
+    }
+    return urlString;
 }
 
 #pragma mark -

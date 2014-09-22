@@ -615,6 +615,7 @@
 				7C48B40F19D05CDA00EEAFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C48B41019D05CDA00EEAFC6 /* Build configuration list for PBXNativeTarget "JNKNaverShortUrlOpenAPI iOS ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +624,7 @@
 				7C48B41219D05CDA00EEAFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

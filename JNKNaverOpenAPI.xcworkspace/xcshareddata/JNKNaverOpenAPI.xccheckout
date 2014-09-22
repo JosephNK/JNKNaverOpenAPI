@@ -10,14 +10,14 @@
 	<string>JNKNaverOpenAPI</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>92117EA625ABC1B56F65375509BA500550D88D28</key>
+		<key>1BF7E789D932B3AC31C48AD60EF89814CE657DA3</key>
 		<string>github.com:JosephNK/JNKNaverOpenAPI.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>JNKNaverOpenAPI.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>92117EA625ABC1B56F65375509BA500550D88D28</key>
+		<key>1BF7E789D932B3AC31C48AD60EF89814CE657DA3</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>92117EA625ABC1B56F65375509BA500550D88D28</string>
+	<string>1BF7E789D932B3AC31C48AD60EF89814CE657DA3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>92117EA625ABC1B56F65375509BA500550D88D28</string>
+			<string>1BF7E789D932B3AC31C48AD60EF89814CE657DA3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>JNKNaverOpenAPI</string>
 		</dict>

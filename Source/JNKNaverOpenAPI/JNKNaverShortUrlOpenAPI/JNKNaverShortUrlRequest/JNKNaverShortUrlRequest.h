@@ -31,10 +31,27 @@ typedef void (^JNKNaverShortUrlRequestErrorHandler)  (JNKNaverShortUrlRequest *r
 
 @interface JNKNaverShortUrlRequest : NSObject
 
+/**
+ * @brief 변환 할 URL
+ * @see String (필수)
+ * @author
+ **/
 @property (nonatomic, strong) NSString *orgUrl;
+
+/**
+ * @brief XML, JSON 데이타 형식
+ * @see String (필수) : xml, json
+ * @author
+ **/
 @property (nonatomic, strong) NSString *dataType;
 
-- (void)requestShortUrlAPI:(NSString *)orgUrl
+- (void)requestShortUrlAPI:(id)delegate
+                   parsing:(JNKNaverShortUrlRequestParserHandler)parser
+                   success:(JNKNaverShortUrlRequestSuccessHandler)success
+                   failure:(JNKNaverShortUrlRequestErrorHandler)failure;
+
+- (void)requestShortUrlAPI:(id)delegate
+                    orgUrl:(NSString *)orgUrl
                   dataType:(NSString *)dataType
                    parsing:(JNKNaverShortUrlRequestParserHandler)parser
                    success:(JNKNaverShortUrlRequestSuccessHandler)success

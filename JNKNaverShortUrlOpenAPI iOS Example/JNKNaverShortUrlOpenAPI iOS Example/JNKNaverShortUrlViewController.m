@@ -34,7 +34,9 @@
     }
     
     JNKNaverShortUrlRequest *api = [[JNKNaverShortUrlRequest alloc] init];
-    [api requestShortUrlAPI:orgUrl dataType:@"xml"
+    [api requestShortUrlAPI:nil
+                     orgUrl:orgUrl
+                   dataType:@"xml"
                     parsing:^id(JNKNaverShortUrlRequest *request, NSData *responseData) {
                         return [JNKNaverTBXMLParser pasingFromShortUrlData:responseData];
                     } success:^(JNKNaverShortUrlRequest *request, id items) {
