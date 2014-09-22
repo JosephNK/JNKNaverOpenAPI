@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Vendor"
+      name = "Vendor">
+      <Group
+         location = "group:JNKLibrary"
+         name = "JNKLibrary">
+         <Group
+            location = "group:JNKAsyncURLConnection"
+            name = "JNKAsyncURLConnection">
+            <FileRef
+               location = "group:JNKAsyncURLConnection.h">
+            </FileRef>
+            <FileRef
+               location = "group:JNKAsyncURLConnection.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:JNKMacro"
+            name = "JNKMacro">
+            <FileRef
+               location = "group:JNKARCMacro.h">
+            </FileRef>
+            <FileRef
+               location = "group:JNKLogMacro.h">
+            </FileRef>
+            <FileRef
+               location = "group:JNKMacro.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:JNKOAuth1"
+            name = "JNKOAuth1">
+            <Group
+               location = "group:JNKBase64Transcoder"
+               name = "JNKBase64Transcoder">
+               <FileRef
+                  location = "group:JNKBase64Transcoder.c">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKBase64Transcoder.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:JNKOAuth1.h">
+            </FileRef>
+            <FileRef
+               location = "group:JNKOAuth1.m">
+            </FileRef>
+            <Group
+               location = "group:JNKOAuth1Category"
+               name = "JNKOAuth1Category">
+               <FileRef
+                  location = "group:NSString+JNKOAuth1Encoding.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+JNKOAuth1Encoding.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:JNKOAuth1Helper"
+               name = "JNKOAuth1Helper">
+               <FileRef
+                  location = "group:JNKOAuth1Helper.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKOAuth1Helper.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:JNKOAuth1UserDefaults"
+               name = "JNKOAuth1UserDefaults">
+               <FileRef
+                  location = "group:JNKOAuth1UserDefaults.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKOAuth1UserDefaults.m">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:TBXML"
+         name = "TBXML">
+         <Group
+            location = "group:TBXML-Code"
+            name = "TBXML-Code">
+            <FileRef
+               location = "group:TBXML+Compression.m">
+            </FileRef>
+            <FileRef
+               location = "group:TBXML+HTTP.m">
+            </FileRef>
+            <FileRef
+               location = "group:TBXML.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:TBXML-Headers"
+            name = "TBXML-Headers">
+            <FileRef
+               location = "group:TBXML+Compression.h">
+            </FileRef>
+            <FileRef
+               location = "group:TBXML+HTTP.h">
+            </FileRef>
+            <FileRef
+               location = "group:TBXML.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:TBXML-Support"
+            name = "TBXML-Support">
+            <FileRef
+               location = "group:TBXML-iOS-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:TBXML-Prefix.pch">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Source"
+      name = "Source">
+      <Group
+         location = "group:JNKNaverCategory"
+         name = "JNKNaverCategory">
+         <FileRef
+            location = "group:NSString+JNKURLEncode.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+JNKURLEncode.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIAlertView+JNKError.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIAlertView+JNKError.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:JNKNaverTBXMLParser"
+         name = "JNKNaverTBXMLParser">
+         <FileRef
+            location = "group:JNKNaverTBXMLParser.h">
+         </FileRef>
+         <FileRef
+            location = "group:JNKNaverTBXMLParser.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:JNKNaverOpenAPI"
+         name = "JNKNaverOpenAPI">
+         <Group
+            location = "group:JNKNaverShortUrlOpenAPI"
+            name = "JNKNaverShortUrlOpenAPI">
+            <Group
+               location = "group:JNKNaverShortUrlRequest"
+               name = "JNKNaverShortUrlRequest">
+               <FileRef
+                  location = "group:JNKNaverShortUrlRequest.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKNaverShortUrlRequest.m">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:JNKNaverShortUrlOpenAPI.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:JNKNaverCafeOpenAPI"
+            name = "JNKNaverCafeOpenAPI">
+            <Group
+               location = "group:JNKNaverCafeQuery"
+               name = "JNKNaverCafeQuery">
+               <FileRef
+                  location = "group:JNKNaverCafeQuery.h">
+               </FileRef>
+               <Group
+                  location = "group:JNKNaverCafeQueryArticleList"
+                  name = "JNKNaverCafeQueryArticleList">
+                  <FileRef
+                     location = "group:JNKNaverCafeQueryArticleList.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverCafeQueryArticleList.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverCafeQueryMenuList"
+                  name = "JNKNaverCafeQueryMenuList">
+                  <FileRef
+                     location = "group:JNKNaverCafeQueryMenuList.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverCafeQueryMenuList.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverCafeQueryMyCafeList"
+                  name = "JNKNaverCafeQueryMyCafeList">
+                  <FileRef
+                     location = "group:JNKNaverCafeQueryMyCafeList.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverCafeQueryMyCafeList.m">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:JNKNaverCafeRequest"
+               name = "JNKNaverCafeRequest">
+               <FileRef
+                  location = "group:JNKNaverCafeRequest.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKNaverCafeRequest.m">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:JNKNaverCafeOpenAPI.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:JNKNaverOAuth1OpenAPI"
+            name = "JNKNaverOAuth1OpenAPI">
+            <Group
+               location = "group:JNKNaverOAuth1Request"
+               name = "JNKNaverOAuth1Request">
+               <FileRef
+                  location = "group:JNKNaverOAuth1Request.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKNaverOAuth1Request.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:JNKNaverWebViewController"
+               name = "JNKNaverWebViewController">
+               <FileRef
+                  location = "group:JNKNaverOAuth1WebViewController.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKNaverOAuth1WebViewController.m">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:JNKNaverOAuth1OpenAPI.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:JNKNaverSearchOpenAPI"
+            name = "JNKNaverSearchOpenAPI">
+            <Group
+               location = "group:JNKNaverSearchQuery"
+               name = "JNKNaverSearchQuery">
+               <Group
+                  location = "group:JNKNaverSearchQueryAdult"
+                  name = "JNKNaverSearchQueryAdult">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryAdult.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryAdult.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryBlog"
+                  name = "JNKNaverSearchQueryBlog">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryBlog.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryBlog.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryBook"
+                  name = "JNKNaverSearchQueryBook">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryBook.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryBook.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryCafe"
+                  name = "JNKNaverSearchQueryCafe">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryCafe.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryCafe.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryDoc"
+                  name = "JNKNaverSearchQueryDoc">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryDoc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryDoc.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryEncyc"
+                  name = "JNKNaverSearchQueryEncyc">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryEncyc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryEncyc.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryImage"
+                  name = "JNKNaverSearchQueryImage">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryImage.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryImage.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryKin"
+                  name = "JNKNaverSearchQueryKin">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryKin.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryKin.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryLocal"
+                  name = "JNKNaverSearchQueryLocal">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryLocal.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryLocal.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryMovie"
+                  name = "JNKNaverSearchQueryMovie">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryMovie.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryMovie.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryNews"
+                  name = "JNKNaverSearchQueryNews">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryNews.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryNews.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryShop"
+                  name = "JNKNaverSearchQueryShop">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryShop.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryShop.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:JNKNaverSearchQueryWebKr"
+                  name = "JNKNaverSearchQueryWebKr">
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryWebKr.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:JNKNaverSearchQueryWebKr.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:JNKNaverSearchQuery.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:JNKNaverSearchOpenAPI.h">
+            </FileRef>
+            <Group
+               location = "group:JNKNaverSearchRequest"
+               name = "JNKNaverSearchRequest">
+               <FileRef
+                  location = "group:JNKNaverSearchRequest.h">
+               </FileRef>
+               <FileRef
+                  location = "group:JNKNaverSearchRequest.m">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:JNKNaverOpenAPIConf.h">
+         </FileRef>
+         <FileRef
+            location = "group:JNKNaverOpenAPI.h">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:JNKNaverShortUrlOpenAPI iOS Example/JNKNaverShortUrlOpenAPI iOS Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JNKNaverCafeOpenAPI iOS Example/JNKNaverCafeOpenAPI iOS Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JNKNaverSearchOpenAPI iOS Example/JNKNaverSearchOpenAPI iOS Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JNKNaverOAuth1OpenAPI iOS Example/JNKNaverOAuth1OpenAPI iOS Example.xcodeproj">
+   </FileRef>
+</Workspace>

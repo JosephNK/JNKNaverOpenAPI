@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C1E3EAF19CEEFFD0063CECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E3EAE19CEEFFD0063CECA /* main.m */; };
+		7C1E3EB219CEEFFD0063CECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E3EB119CEEFFD0063CECA /* AppDelegate.m */; };
+		7C1E3EB819CEEFFD0063CECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1E3EB619CEEFFD0063CECA /* Main.storyboard */; };
+		7C1E3EBA19CEEFFD0063CECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1E3EB919CEEFFD0063CECA /* Images.xcassets */; };
+		7C1E3EBD19CEEFFD0063CECA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C1E3EBB19CEEFFD0063CECA /* LaunchScreen.xib */; };
+		7C1E3EC919CEEFFD0063CECA /* JNKNaverCafeOpenAPI_iOS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E3EC819CEEFFD0063CECA /* JNKNaverCafeOpenAPI_iOS_ExampleTests.m */; };
+		7C1E3ED419CEF0C30063CECA /* JNKNaverCafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E3ED319CEF0C30063CECA /* JNKNaverCafeViewController.m */; };
+		7C1E402F19CEF4600063CECA /* JNKAsyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E400819CEF4600063CECA /* JNKAsyncURLConnection.m */; };
+		7C1E403019CEF4600063CECA /* JNKBase64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E400F19CEF4600063CECA /* JNKBase64Transcoder.c */; };
+		7C1E403119CEF4600063CECA /* JNKOAuth1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E401219CEF4600063CECA /* JNKOAuth1.m */; };
+		7C1E403219CEF4600063CECA /* NSString+JNKOAuth1Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E401519CEF4600063CECA /* NSString+JNKOAuth1Encoding.m */; };
+		7C1E403319CEF4600063CECA /* JNKOAuth1Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E401819CEF4600063CECA /* JNKOAuth1Helper.m */; };
+		7C1E403419CEF4600063CECA /* JNKOAuth1UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E401B19CEF4600063CECA /* JNKOAuth1UserDefaults.m */; };
+		7C1E404B19CEF5160063CECA /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E404119CEF5160063CECA /* TBXML+Compression.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7C1E404C19CEF5160063CECA /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E404219CEF5160063CECA /* TBXML+HTTP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7C1E404D19CEF5160063CECA /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E404319CEF5160063CECA /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7C1E405019CEF56B0063CECA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E404F19CEF56B0063CECA /* libz.dylib */; };
+		7C1E405219CEF56F0063CECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E405119CEF56F0063CECA /* UIKit.framework */; };
+		7C1E405419CEF5760063CECA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E405319CEF5760063CECA /* CoreGraphics.framework */; };
+		7C1E405619CEF57A0063CECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1E405519CEF57A0063CECA /* Foundation.framework */; };
+		7C7B24B519D0554F006298E6 /* JNKNaverTBXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B24B419D0554F006298E6 /* JNKNaverTBXMLParser.m */; };
+		7C7B24C619D056CB006298E6 /* NSString+JNKURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B24C319D056CB006298E6 /* NSString+JNKURLEncode.m */; };
+		7C7B24C719D056CB006298E6 /* UIAlertView+JNKError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B24C519D056CB006298E6 /* UIAlertView+JNKError.m */; };
+		7CDBAF6719CF0A4500782746 /* JNKNaverCafeQueryArticleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAF1D19CF0A4500782746 /* JNKNaverCafeQueryArticleList.m */; };
+		7CDBAF6819CF0A4500782746 /* JNKNaverCafeQueryMenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAF2019CF0A4500782746 /* JNKNaverCafeQueryMenuList.m */; };
+		7CDBAF6919CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAF2319CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.m */; };
+		7CDBAF6A19CF0A4500782746 /* JNKNaverCafeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAF2619CF0A4500782746 /* JNKNaverCafeRequest.m */; };
+		7CDBAF6B19CF0A4500782746 /* JNKNaverOAuth1Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAF2B19CF0A4500782746 /* JNKNaverOAuth1Request.m */; };
+		7CDBAF6C19CF0A4500782746 /* JNKNaverOAuth1WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBAF2E19CF0A4500782746 /* JNKNaverOAuth1WebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C1E3EC319CEEFFD0063CECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C1E3EA119CEEFFD0063CECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C1E3EA819CEEFFD0063CECA;
+			remoteInfo = "JNKNaverCafeOpenAPI iOS Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C1E3EA919CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JNKNaverCafeOpenAPI iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1E3EAD19CEEFFD0063CECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1E3EAE19CEEFFD0063CECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C1E3EB019CEEFFD0063CECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C1E3EB119CEEFFD0063CECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C1E3EB719CEEFFD0063CECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C1E3EB919CEEFFD0063CECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7C1E3EBC19CEEFFD0063CECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7C1E3EC219CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JNKNaverCafeOpenAPI iOS ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1E3EC719CEEFFD0063CECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1E3EC819CEEFFD0063CECA /* JNKNaverCafeOpenAPI_iOS_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNKNaverCafeOpenAPI_iOS_ExampleTests.m; sourceTree = "<group>"; };
+		7C1E3ED219CEF0C30063CECA /* JNKNaverCafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeViewController.h; sourceTree = "<group>"; };
+		7C1E3ED319CEF0C30063CECA /* JNKNaverCafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverCafeViewController.m; sourceTree = "<group>"; };
+		7C1E400719CEF4600063CECA /* JNKAsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKAsyncURLConnection.h; sourceTree = "<group>"; };
+		7C1E400819CEF4600063CECA /* JNKAsyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKAsyncURLConnection.m; sourceTree = "<group>"; };
+		7C1E400A19CEF4600063CECA /* JNKARCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKARCMacro.h; sourceTree = "<group>"; };
+		7C1E400B19CEF4600063CECA /* JNKLogMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKLogMacro.h; sourceTree = "<group>"; };
+		7C1E400C19CEF4600063CECA /* JNKMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKMacro.h; sourceTree = "<group>"; };
+		7C1E400F19CEF4600063CECA /* JNKBase64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JNKBase64Transcoder.c; sourceTree = "<group>"; };
+		7C1E401019CEF4600063CECA /* JNKBase64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKBase64Transcoder.h; sourceTree = "<group>"; };
+		7C1E401119CEF4600063CECA /* JNKOAuth1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKOAuth1.h; sourceTree = "<group>"; };
+		7C1E401219CEF4600063CECA /* JNKOAuth1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKOAuth1.m; sourceTree = "<group>"; };
+		7C1E401419CEF4600063CECA /* NSString+JNKOAuth1Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JNKOAuth1Encoding.h"; sourceTree = "<group>"; };
+		7C1E401519CEF4600063CECA /* NSString+JNKOAuth1Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JNKOAuth1Encoding.m"; sourceTree = "<group>"; };
+		7C1E401719CEF4600063CECA /* JNKOAuth1Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKOAuth1Helper.h; sourceTree = "<group>"; };
+		7C1E401819CEF4600063CECA /* JNKOAuth1Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKOAuth1Helper.m; sourceTree = "<group>"; };
+		7C1E401A19CEF4600063CECA /* JNKOAuth1UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKOAuth1UserDefaults.h; sourceTree = "<group>"; };
+		7C1E401B19CEF4600063CECA /* JNKOAuth1UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKOAuth1UserDefaults.m; sourceTree = "<group>"; };
+		7C1E404119CEF5160063CECA /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
+		7C1E404219CEF5160063CECA /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
+		7C1E404319CEF5160063CECA /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		7C1E404519CEF5160063CECA /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
+		7C1E404619CEF5160063CECA /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
+		7C1E404719CEF5160063CECA /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		7C1E404919CEF5160063CECA /* TBXML-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		7C1E404A19CEF5160063CECA /* TBXML-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML-Prefix.pch"; sourceTree = "<group>"; };
+		7C1E404F19CEF56B0063CECA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7C1E405119CEF56F0063CECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C1E405319CEF5760063CECA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7C1E405519CEF57A0063CECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7C7B24A719D04CB1006298E6 /* JNKNaverOpenAPIConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverOpenAPIConf.h; sourceTree = "<group>"; };
+		7C7B24A819D04CCC006298E6 /* JNKNaverOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverOpenAPI.h; sourceTree = "<group>"; };
+		7C7B24B319D0554F006298E6 /* JNKNaverTBXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverTBXMLParser.h; sourceTree = "<group>"; };
+		7C7B24B419D0554F006298E6 /* JNKNaverTBXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverTBXMLParser.m; sourceTree = "<group>"; };
+		7C7B24C219D056CB006298E6 /* NSString+JNKURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JNKURLEncode.h"; sourceTree = "<group>"; };
+		7C7B24C319D056CB006298E6 /* NSString+JNKURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JNKURLEncode.m"; sourceTree = "<group>"; };
+		7C7B24C419D056CB006298E6 /* UIAlertView+JNKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+JNKError.h"; sourceTree = "<group>"; };
+		7C7B24C519D056CB006298E6 /* UIAlertView+JNKError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+JNKError.m"; sourceTree = "<group>"; };
+		7CDBAF1519CF0A4500782746 /* JNKNaverCafeOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeOpenAPI.h; sourceTree = "<group>"; };
+		7CDBAF1A19CF0A4500782746 /* JNKNaverCafeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeQuery.h; sourceTree = "<group>"; };
+		7CDBAF1C19CF0A4500782746 /* JNKNaverCafeQueryArticleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeQueryArticleList.h; sourceTree = "<group>"; };
+		7CDBAF1D19CF0A4500782746 /* JNKNaverCafeQueryArticleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverCafeQueryArticleList.m; sourceTree = "<group>"; };
+		7CDBAF1F19CF0A4500782746 /* JNKNaverCafeQueryMenuList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeQueryMenuList.h; sourceTree = "<group>"; };
+		7CDBAF2019CF0A4500782746 /* JNKNaverCafeQueryMenuList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverCafeQueryMenuList.m; sourceTree = "<group>"; };
+		7CDBAF2219CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeQueryMyCafeList.h; sourceTree = "<group>"; };
+		7CDBAF2319CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverCafeQueryMyCafeList.m; sourceTree = "<group>"; };
+		7CDBAF2519CF0A4500782746 /* JNKNaverCafeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverCafeRequest.h; sourceTree = "<group>"; };
+		7CDBAF2619CF0A4500782746 /* JNKNaverCafeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverCafeRequest.m; sourceTree = "<group>"; };
+		7CDBAF2819CF0A4500782746 /* JNKNaverOAuth1OpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverOAuth1OpenAPI.h; sourceTree = "<group>"; };
+		7CDBAF2A19CF0A4500782746 /* JNKNaverOAuth1Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverOAuth1Request.h; sourceTree = "<group>"; };
+		7CDBAF2B19CF0A4500782746 /* JNKNaverOAuth1Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverOAuth1Request.m; sourceTree = "<group>"; };
+		7CDBAF2D19CF0A4500782746 /* JNKNaverOAuth1WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKNaverOAuth1WebViewController.h; sourceTree = "<group>"; };
+		7CDBAF2E19CF0A4500782746 /* JNKNaverOAuth1WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKNaverOAuth1WebViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C1E3EA619CEEFFD0063CECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1E405619CEF57A0063CECA /* Foundation.framework in Frameworks */,
+				7C1E405419CEF5760063CECA /* CoreGraphics.framework in Frameworks */,
+				7C1E405219CEF56F0063CECA /* UIKit.framework in Frameworks */,
+				7C1E405019CEF56B0063CECA /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1E3EBF19CEEFFD0063CECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C1E3EA019CEEFFD0063CECA = {
+			isa = PBXGroup;
+			children = (
+				7C1E400419CEF4600063CECA /* Vendor */,
+				7C1E3FC419CEF4600063CECA /* Source */,
+				7C1E3EAB19CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example */,
+				7C1E404E19CEF5630063CECA /* Frameworks */,
+				7C1E3EC519CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests */,
+				7C1E3EAA19CEEFFD0063CECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C1E3EAA19CEEFFD0063CECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E3EA919CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example.app */,
+				7C1E3EC219CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C1E3EAB19CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E3EB019CEEFFD0063CECA /* AppDelegate.h */,
+				7C1E3EB119CEEFFD0063CECA /* AppDelegate.m */,
+				7C1E3ED219CEF0C30063CECA /* JNKNaverCafeViewController.h */,
+				7C1E3ED319CEF0C30063CECA /* JNKNaverCafeViewController.m */,
+				7C1E3EB619CEEFFD0063CECA /* Main.storyboard */,
+				7C1E3EB919CEEFFD0063CECA /* Images.xcassets */,
+				7C1E3EBB19CEEFFD0063CECA /* LaunchScreen.xib */,
+				7C1E3EAC19CEEFFD0063CECA /* Supporting Files */,
+			);
+			path = "JNKNaverCafeOpenAPI iOS Example";
+			sourceTree = "<group>";
+		};
+		7C1E3EAC19CEEFFD0063CECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E3EAD19CEEFFD0063CECA /* Info.plist */,
+				7C1E3EAE19CEEFFD0063CECA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C1E3EC519CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E3EC819CEEFFD0063CECA /* JNKNaverCafeOpenAPI_iOS_ExampleTests.m */,
+				7C1E3EC619CEEFFD0063CECA /* Supporting Files */,
+			);
+			path = "JNKNaverCafeOpenAPI iOS ExampleTests";
+			sourceTree = "<group>";
+		};
+		7C1E3EC619CEEFFD0063CECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E3EC719CEEFFD0063CECA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C1E3FC419CEF4600063CECA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7C7B24C119D056CB006298E6 /* JNKNaverCategory */,
+				7C7B24B219D0554F006298E6 /* JNKNaverTBXMLParser */,
+				7CDBAF1019CF0A4500782746 /* JNKNaverOpenAPI */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		7C1E400419CEF4600063CECA /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E400519CEF4600063CECA /* JNKLibrary */,
+				7C1E403F19CEF5160063CECA /* TBXML */,
+			);
+			name = Vendor;
+			path = ../Vendor;
+			sourceTree = "<group>";
+		};
+		7C1E400519CEF4600063CECA /* JNKLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E400619CEF4600063CECA /* JNKAsyncURLConnection */,
+				7C1E400919CEF4600063CECA /* JNKMacro */,
+				7C1E400D19CEF4600063CECA /* JNKOAuth1 */,
+			);
+			path = JNKLibrary;
+			sourceTree = "<group>";
+		};
+		7C1E400619CEF4600063CECA /* JNKAsyncURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E400719CEF4600063CECA /* JNKAsyncURLConnection.h */,
+				7C1E400819CEF4600063CECA /* JNKAsyncURLConnection.m */,
+			);
+			path = JNKAsyncURLConnection;
+			sourceTree = "<group>";
+		};
+		7C1E400919CEF4600063CECA /* JNKMacro */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E400A19CEF4600063CECA /* JNKARCMacro.h */,
+				7C1E400B19CEF4600063CECA /* JNKLogMacro.h */,
+				7C1E400C19CEF4600063CECA /* JNKMacro.h */,
+			);
+			path = JNKMacro;
+			sourceTree = "<group>";
+		};
+		7C1E400D19CEF4600063CECA /* JNKOAuth1 */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E401319CEF4600063CECA /* JNKOAuth1Category */,
+				7C1E401619CEF4600063CECA /* JNKOAuth1Helper */,
+				7C1E401919CEF4600063CECA /* JNKOAuth1UserDefaults */,
+				7C1E400E19CEF4600063CECA /* JNKBase64Transcoder */,
+				7C1E401119CEF4600063CECA /* JNKOAuth1.h */,
+				7C1E401219CEF4600063CECA /* JNKOAuth1.m */,
+			);
+			path = JNKOAuth1;
+			sourceTree = "<group>";
+		};
+		7C1E400E19CEF4600063CECA /* JNKBase64Transcoder */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E400F19CEF4600063CECA /* JNKBase64Transcoder.c */,
+				7C1E401019CEF4600063CECA /* JNKBase64Transcoder.h */,
+			);
+			path = JNKBase64Transcoder;
+			sourceTree = "<group>";
+		};
+		7C1E401319CEF4600063CECA /* JNKOAuth1Category */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E401419CEF4600063CECA /* NSString+JNKOAuth1Encoding.h */,
+				7C1E401519CEF4600063CECA /* NSString+JNKOAuth1Encoding.m */,
+			);
+			path = JNKOAuth1Category;
+			sourceTree = "<group>";
+		};
+		7C1E401619CEF4600063CECA /* JNKOAuth1Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E401719CEF4600063CECA /* JNKOAuth1Helper.h */,
+				7C1E401819CEF4600063CECA /* JNKOAuth1Helper.m */,
+			);
+			path = JNKOAuth1Helper;
+			sourceTree = "<group>";
+		};
+		7C1E401919CEF4600063CECA /* JNKOAuth1UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E401A19CEF4600063CECA /* JNKOAuth1UserDefaults.h */,
+				7C1E401B19CEF4600063CECA /* JNKOAuth1UserDefaults.m */,
+			);
+			path = JNKOAuth1UserDefaults;
+			sourceTree = "<group>";
+		};
+		7C1E403F19CEF5160063CECA /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E404019CEF5160063CECA /* TBXML-Code */,
+				7C1E404419CEF5160063CECA /* TBXML-Headers */,
+				7C1E404819CEF5160063CECA /* TBXML-Support */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+		7C1E404019CEF5160063CECA /* TBXML-Code */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E404119CEF5160063CECA /* TBXML+Compression.m */,
+				7C1E404219CEF5160063CECA /* TBXML+HTTP.m */,
+				7C1E404319CEF5160063CECA /* TBXML.m */,
+			);
+			path = "TBXML-Code";
+			sourceTree = "<group>";
+		};
+		7C1E404419CEF5160063CECA /* TBXML-Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E404519CEF5160063CECA /* TBXML+Compression.h */,
+				7C1E404619CEF5160063CECA /* TBXML+HTTP.h */,
+				7C1E404719CEF5160063CECA /* TBXML.h */,
+			);
+			path = "TBXML-Headers";
+			sourceTree = "<group>";
+		};
+		7C1E404819CEF5160063CECA /* TBXML-Support */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E404919CEF5160063CECA /* TBXML-iOS-Prefix.pch */,
+				7C1E404A19CEF5160063CECA /* TBXML-Prefix.pch */,
+			);
+			path = "TBXML-Support";
+			sourceTree = "<group>";
+		};
+		7C1E404E19CEF5630063CECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C1E405519CEF57A0063CECA /* Foundation.framework */,
+				7C1E405319CEF5760063CECA /* CoreGraphics.framework */,
+				7C1E405119CEF56F0063CECA /* UIKit.framework */,
+				7C1E404F19CEF56B0063CECA /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C7B24B219D0554F006298E6 /* JNKNaverTBXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				7C7B24B319D0554F006298E6 /* JNKNaverTBXMLParser.h */,
+				7C7B24B419D0554F006298E6 /* JNKNaverTBXMLParser.m */,
+			);
+			path = JNKNaverTBXMLParser;
+			sourceTree = "<group>";
+		};
+		7C7B24C119D056CB006298E6 /* JNKNaverCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C7B24C219D056CB006298E6 /* NSString+JNKURLEncode.h */,
+				7C7B24C319D056CB006298E6 /* NSString+JNKURLEncode.m */,
+				7C7B24C419D056CB006298E6 /* UIAlertView+JNKError.h */,
+				7C7B24C519D056CB006298E6 /* UIAlertView+JNKError.m */,
+			);
+			path = JNKNaverCategory;
+			sourceTree = "<group>";
+		};
+		7CDBAF1019CF0A4500782746 /* JNKNaverOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF1119CF0A4500782746 /* JNKNaverCafeOpenAPI */,
+				7CDBAF2719CF0A4500782746 /* JNKNaverOAuth1OpenAPI */,
+				7C7B24A719D04CB1006298E6 /* JNKNaverOpenAPIConf.h */,
+				7C7B24A819D04CCC006298E6 /* JNKNaverOpenAPI.h */,
+			);
+			path = JNKNaverOpenAPI;
+			sourceTree = "<group>";
+		};
+		7CDBAF1119CF0A4500782746 /* JNKNaverCafeOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF1919CF0A4500782746 /* JNKNaverCafeQuery */,
+				7CDBAF2419CF0A4500782746 /* JNKNaverCafeRequest */,
+				7CDBAF1519CF0A4500782746 /* JNKNaverCafeOpenAPI.h */,
+			);
+			path = JNKNaverCafeOpenAPI;
+			sourceTree = "<group>";
+		};
+		7CDBAF1919CF0A4500782746 /* JNKNaverCafeQuery */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF1B19CF0A4500782746 /* JNKNaverCafeQueryArticleList */,
+				7CDBAF1E19CF0A4500782746 /* JNKNaverCafeQueryMenuList */,
+				7CDBAF2119CF0A4500782746 /* JNKNaverCafeQueryMyCafeList */,
+				7CDBAF1A19CF0A4500782746 /* JNKNaverCafeQuery.h */,
+			);
+			path = JNKNaverCafeQuery;
+			sourceTree = "<group>";
+		};
+		7CDBAF1B19CF0A4500782746 /* JNKNaverCafeQueryArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF1C19CF0A4500782746 /* JNKNaverCafeQueryArticleList.h */,
+				7CDBAF1D19CF0A4500782746 /* JNKNaverCafeQueryArticleList.m */,
+			);
+			path = JNKNaverCafeQueryArticleList;
+			sourceTree = "<group>";
+		};
+		7CDBAF1E19CF0A4500782746 /* JNKNaverCafeQueryMenuList */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF1F19CF0A4500782746 /* JNKNaverCafeQueryMenuList.h */,
+				7CDBAF2019CF0A4500782746 /* JNKNaverCafeQueryMenuList.m */,
+			);
+			path = JNKNaverCafeQueryMenuList;
+			sourceTree = "<group>";
+		};
+		7CDBAF2119CF0A4500782746 /* JNKNaverCafeQueryMyCafeList */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF2219CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.h */,
+				7CDBAF2319CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.m */,
+			);
+			path = JNKNaverCafeQueryMyCafeList;
+			sourceTree = "<group>";
+		};
+		7CDBAF2419CF0A4500782746 /* JNKNaverCafeRequest */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF2519CF0A4500782746 /* JNKNaverCafeRequest.h */,
+				7CDBAF2619CF0A4500782746 /* JNKNaverCafeRequest.m */,
+			);
+			path = JNKNaverCafeRequest;
+			sourceTree = "<group>";
+		};
+		7CDBAF2719CF0A4500782746 /* JNKNaverOAuth1OpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF2919CF0A4500782746 /* JNKNaverOAuth1Request */,
+				7CDBAF2C19CF0A4500782746 /* JNKNaverWebViewController */,
+				7CDBAF2819CF0A4500782746 /* JNKNaverOAuth1OpenAPI.h */,
+			);
+			path = JNKNaverOAuth1OpenAPI;
+			sourceTree = "<group>";
+		};
+		7CDBAF2919CF0A4500782746 /* JNKNaverOAuth1Request */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF2A19CF0A4500782746 /* JNKNaverOAuth1Request.h */,
+				7CDBAF2B19CF0A4500782746 /* JNKNaverOAuth1Request.m */,
+			);
+			path = JNKNaverOAuth1Request;
+			sourceTree = "<group>";
+		};
+		7CDBAF2C19CF0A4500782746 /* JNKNaverWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBAF2D19CF0A4500782746 /* JNKNaverOAuth1WebViewController.h */,
+				7CDBAF2E19CF0A4500782746 /* JNKNaverOAuth1WebViewController.m */,
+			);
+			path = JNKNaverWebViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C1E3EA819CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1E3ECC19CEEFFD0063CECA /* Build configuration list for PBXNativeTarget "JNKNaverCafeOpenAPI iOS Example" */;
+			buildPhases = (
+				7C1E3EA519CEEFFD0063CECA /* Sources */,
+				7C1E3EA619CEEFFD0063CECA /* Frameworks */,
+				7C1E3EA719CEEFFD0063CECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JNKNaverCafeOpenAPI iOS Example";
+			productName = "JNKNaverCafeOpenAPI iOS Example";
+			productReference = 7C1E3EA919CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C1E3EC119CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1E3ECF19CEEFFD0063CECA /* Build configuration list for PBXNativeTarget "JNKNaverCafeOpenAPI iOS ExampleTests" */;
+			buildPhases = (
+				7C1E3EBE19CEEFFD0063CECA /* Sources */,
+				7C1E3EBF19CEEFFD0063CECA /* Frameworks */,
+				7C1E3EC019CEEFFD0063CECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C1E3EC419CEEFFD0063CECA /* PBXTargetDependency */,
+			);
+			name = "JNKNaverCafeOpenAPI iOS ExampleTests";
+			productName = "JNKNaverCafeOpenAPI iOS ExampleTests";
+			productReference = 7C1E3EC219CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C1E3EA119CEEFFD0063CECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = JosephNK;
+				TargetAttributes = {
+					7C1E3EA819CEEFFD0063CECA = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					7C1E3EC119CEEFFD0063CECA = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 7C1E3EA819CEEFFD0063CECA;
+					};
+				};
+			};
+			buildConfigurationList = 7C1E3EA419CEEFFD0063CECA /* Build configuration list for PBXProject "JNKNaverCafeOpenAPI iOS Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C1E3EA019CEEFFD0063CECA;
+			productRefGroup = 7C1E3EAA19CEEFFD0063CECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C1E3EA819CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example */,
+				7C1E3EC119CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C1E3EA719CEEFFD0063CECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1E3EB819CEEFFD0063CECA /* Main.storyboard in Resources */,
+				7C1E3EBD19CEEFFD0063CECA /* LaunchScreen.xib in Resources */,
+				7C1E3EBA19CEEFFD0063CECA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1E3EC019CEEFFD0063CECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C1E3EA519CEEFFD0063CECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1E403019CEF4600063CECA /* JNKBase64Transcoder.c in Sources */,
+				7C1E402F19CEF4600063CECA /* JNKAsyncURLConnection.m in Sources */,
+				7C1E403219CEF4600063CECA /* NSString+JNKOAuth1Encoding.m in Sources */,
+				7C7B24B519D0554F006298E6 /* JNKNaverTBXMLParser.m in Sources */,
+				7C1E3ED419CEF0C30063CECA /* JNKNaverCafeViewController.m in Sources */,
+				7C1E403419CEF4600063CECA /* JNKOAuth1UserDefaults.m in Sources */,
+				7C1E403319CEF4600063CECA /* JNKOAuth1Helper.m in Sources */,
+				7CDBAF6C19CF0A4500782746 /* JNKNaverOAuth1WebViewController.m in Sources */,
+				7C1E3EB219CEEFFD0063CECA /* AppDelegate.m in Sources */,
+				7C7B24C719D056CB006298E6 /* UIAlertView+JNKError.m in Sources */,
+				7CDBAF6919CF0A4500782746 /* JNKNaverCafeQueryMyCafeList.m in Sources */,
+				7C1E3EAF19CEEFFD0063CECA /* main.m in Sources */,
+				7C1E404B19CEF5160063CECA /* TBXML+Compression.m in Sources */,
+				7CDBAF6719CF0A4500782746 /* JNKNaverCafeQueryArticleList.m in Sources */,
+				7CDBAF6819CF0A4500782746 /* JNKNaverCafeQueryMenuList.m in Sources */,
+				7C1E403119CEF4600063CECA /* JNKOAuth1.m in Sources */,
+				7C1E404C19CEF5160063CECA /* TBXML+HTTP.m in Sources */,
+				7CDBAF6B19CF0A4500782746 /* JNKNaverOAuth1Request.m in Sources */,
+				7C7B24C619D056CB006298E6 /* NSString+JNKURLEncode.m in Sources */,
+				7C1E404D19CEF5160063CECA /* TBXML.m in Sources */,
+				7CDBAF6A19CF0A4500782746 /* JNKNaverCafeRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1E3EBE19CEEFFD0063CECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1E3EC919CEEFFD0063CECA /* JNKNaverCafeOpenAPI_iOS_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C1E3EC419CEEFFD0063CECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C1E3EA819CEEFFD0063CECA /* JNKNaverCafeOpenAPI iOS Example */;
+			targetProxy = 7C1E3EC319CEEFFD0063CECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C1E3EB619CEEFFD0063CECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C1E3EB719CEEFFD0063CECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C1E3EBB19CEEFFD0063CECA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C1E3EBC19CEEFFD0063CECA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C1E3ECA19CEEFFD0063CECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C1E3ECB19CEEFFD0063CECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C1E3ECD19CEEFFD0063CECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JNKNaverCafeOpenAPI iOS Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7C1E3ECE19CEEFFD0063CECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JNKNaverCafeOpenAPI iOS Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7C1E3ED019CEEFFD0063CECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JNKNaverCafeOpenAPI iOS ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JNKNaverCafeOpenAPI iOS Example.app/JNKNaverCafeOpenAPI iOS Example";
+			};
+			name = Debug;
+		};
+		7C1E3ED119CEEFFD0063CECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JNKNaverCafeOpenAPI iOS ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JNKNaverCafeOpenAPI iOS Example.app/JNKNaverCafeOpenAPI iOS Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C1E3EA419CEEFFD0063CECA /* Build configuration list for PBXProject "JNKNaverCafeOpenAPI iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1E3ECA19CEEFFD0063CECA /* Debug */,
+				7C1E3ECB19CEEFFD0063CECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1E3ECC19CEEFFD0063CECA /* Build configuration list for PBXNativeTarget "JNKNaverCafeOpenAPI iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1E3ECD19CEEFFD0063CECA /* Debug */,
+				7C1E3ECE19CEEFFD0063CECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1E3ECF19CEEFFD0063CECA /* Build configuration list for PBXNativeTarget "JNKNaverCafeOpenAPI iOS ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1E3ED019CEEFFD0063CECA /* Debug */,
+				7C1E3ED119CEEFFD0063CECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C1E3EA119CEEFFD0063CECA /* Project object */;
+}
